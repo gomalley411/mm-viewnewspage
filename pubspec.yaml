@@ -32,6 +32,7 @@ dependencies:
   file_picker: ^4.5.1
   image_picker: ^0.8.4+11
   video_player: ^2.3.0
+  camera_roll_uploader: ^0.0.7
   ffi:
 
   # The following adds the Cupertino Icons font to your application.
@@ -42,6 +43,9 @@ dependencies:
   http: ^0.13.4
   flutter_form_builder: 7.1.1
   dio:
+  email_validator: ^2.0.1
+  audio_manager: ^0.8.2
+  flutter_audio_query: ^0.3.4+1
 
 
 dev_dependencies:
@@ -71,8 +75,19 @@ flutter:
   # assets:
   assets:
     - assets/MoolahMasterLogo2.png
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+    - assets/dummyimage.png
+    - assets/loss.png
+    - assets/winImage.png
+    - assets/dummyicon.png
+    - assets/createButton.png
+    - assets/joinButton.png
+    - assets/record.png
+    - assets/resumeButton.png
+    - assets/teamVsOppButton.png
+    - assets/viewStandingsButton.png
+    - assets/viewStocksButton.png
+    #   - images/a_dot_burr.jpeg
+    #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
