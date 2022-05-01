@@ -177,6 +177,12 @@ class ChooseLeagueType extends StatelessWidget {
               ),
             ),
             Spacer(),
+            TextButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/thirteenth');
+              },
+              child: Text("View news"),
+            ),
 
             TextButton.icon(
               onPressed: () {
@@ -3003,201 +3009,179 @@ class _ViewNewsPageState extends State<ViewNewsPage> {
       ),
       backgroundColor: const Color.fromRGBO(01,19,36,20),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Spacer(),
-            const Text('Here are some recent articles that may help you during gameplay.',
-              style: TextStyle(
-                  fontSize: 40.0,
-                  color: Colors.white,
-                  fontFamily: 'Bebas Neue'
-              ),
+        child: Expanded(
+            child: ListView(
+            padding: const EdgeInsets.all(80),
+                children: <Widget>[
+                    const Text('Here are some recent articles that may help you during gameplay.',
+                      style: TextStyle(
+                          fontSize: 40.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue'
+                      ),
+                    ),
+                    const Spacer(),
+                    const Text('Headlines taken from the New York Times.',
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        color: Colors.white,
+                        fontFamily: 'Bebas Neue',
+                      ),
+                    ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(239, 41, 23, 1),
+                        onPrimary: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      onPressed: () async => {
+                        await launch(urls[0], forceSafariVC: false)
+                      },
+                      child: Text(
+                        headlines[0],
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(239, 41, 23, 1),
+                        onPrimary: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      onPressed: () async => {
+                        await launch(urls[1], forceSafariVC: false)
+                      },
+                      child: Text(
+                        headlines[1],
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(239, 41, 23, 1),
+                        onPrimary: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      onPressed: () async => {
+                        await launch(urls[2], forceSafariVC: false)
+                      },
+                      child: Text(
+                        headlines[2],
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(239, 41, 23, 1),
+                        onPrimary: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      onPressed: () async => {
+                        await launch(urls[3], forceSafariVC: false)
+                      },
+                      child: Text(
+                        headlines[3],
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(239, 41, 23, 1),
+                        onPrimary: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      onPressed: () async => {
+                        await launch(urls[4], forceSafariVC: false)
+                      },
+                      child: Text(
+                        headlines[4],
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(239, 41, 23, 1),
+                        onPrimary: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      onPressed: () async => {
+                        await launch(urls[5], forceSafariVC: false)
+                      },
+                      child: Text(
+                        headlines[5],
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(239, 41, 23, 1),
+                        onPrimary: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      onPressed: () async => {
+                        await launch(urls[6], forceSafariVC: false)
+                      },
+                      child: Text(
+                        headlines[6],
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(239, 41, 23, 1),
+                        onPrimary: Color.fromRGBO(255, 255, 255, 1),
+                      ),
+                      onPressed: () async => {
+                        await launch(urls[7], forceSafariVC: false)
+                      },
+                      child: Text(
+                        headlines[7],
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          color: Colors.white,
+                          fontFamily: 'Bebas Neue',
+                        ),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                ],
+              shrinkWrap: true,
             ),
-            const Spacer(),
-            const Text('Headlines taken from the New York Times.',
-              style: TextStyle(
-                fontSize: 25.0,
-                color: Colors.white,
-                fontFamily: 'Bebas Neue',
-              ),
-            ),
-            const Spacer(),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 70),
-                          primary: Color.fromRGBO(239, 41, 23, 1),
-                          onPrimary: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                        onPressed: () async => {
-                          await launch(urls[0], forceSafariVC: false)
-                        },
-                        child: Text(
-                          headlines[0],
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            color: Colors.white,
-                            fontFamily: 'Bebas Neue',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 70),
-                          primary: Color.fromRGBO(239, 41, 23, 1),
-                          onPrimary: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                        onPressed: () async => {
-                          await launch(urls[1], forceSafariVC: false)
-                        },
-                        child: Text(
-                          headlines[1],
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            color: Colors.white,
-                            fontFamily: 'Bebas Neue',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 70),
-                          primary: Color.fromRGBO(239, 41, 23, 1),
-                          onPrimary: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                        onPressed: () async => {
-                          await launch(urls[2], forceSafariVC: false)
-                        },
-                        child: Text(
-                          headlines[2],
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            color: Colors.white,
-                            fontFamily: 'Bebas Neue',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 70),
-                          primary: Color.fromRGBO(239, 41, 23, 1),
-                          onPrimary: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                        onPressed: () async => {
-                          await launch(urls[3], forceSafariVC: false)
-                        },
-                        child: Text(
-                          headlines[3],
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            color: Colors.white,
-                            fontFamily: 'Bebas Neue',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 70),
-                          primary: Color.fromRGBO(239, 41, 23, 1),
-                          onPrimary: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                        onPressed: () async => {
-                          await launch(urls[4], forceSafariVC: false)
-                        },
-                        child: Text(
-                          headlines[4],
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            color: Colors.white,
-                            fontFamily: 'Bebas Neue',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 70),
-                          primary: Color.fromRGBO(239, 41, 23, 1),
-                          onPrimary: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                        onPressed: () async => {
-                          await launch(urls[5], forceSafariVC: false)
-                        },
-                        child: Text(
-                          headlines[5],
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            color: Colors.white,
-                            fontFamily: 'Bebas Neue',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 70),
-                          primary: Color.fromRGBO(239, 41, 23, 1),
-                          onPrimary: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                        onPressed: () async => {
-                          await launch(urls[6], forceSafariVC: false)
-                        },
-                        child: Text(
-                          headlines[6],
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            color: Colors.white,
-                            fontFamily: 'Bebas Neue',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: Size(200, 70),
-                          primary: Color.fromRGBO(239, 41, 23, 1),
-                          onPrimary: Color.fromRGBO(255, 255, 255, 1),
-                        ),
-                        onPressed: () async => {
-                          await launch(urls[7], forceSafariVC: false)
-                        },
-                        child: Text(
-                          headlines[7],
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            color: Colors.white,
-                            fontFamily: 'Bebas Neue',
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
-            const Spacer(),
-            const Spacer(),
-          ],
         ),
       ),
     );
